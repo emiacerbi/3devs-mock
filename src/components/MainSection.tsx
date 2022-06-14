@@ -10,7 +10,7 @@ export const MainSection = () => {
         <div className='flex flex-col flex-1 gap-5 justify-center items-center lg:flex-row '>
           <div className={'overflow-hidden relative w-[350px] h-[500px] bg-blue-100 bg-cover bg-churrasco rounded-tr-[10rem] shadow-2xl'}>
             <button className='absolute bottom-5 left-[50%] p-5 w-80 bg-white rounded-md shadow-2xl duration-300 hover:scale-105 translate-x-[-50%] cursor-pointer'>
-              Ordenar
+              Tincho Torlica
             </button>
           </div>
 
@@ -18,7 +18,6 @@ export const MainSection = () => {
 
           </div>
           <div className={'overflow-hidden w-[350px] h-[500px] bg-blue-100 bg-right bg-cover bg-caviar2 rounded-tr-[10rem] shadow-2xl'}>
-
           </div>
         </div>
       </div>
