@@ -16,8 +16,8 @@ module.exports = {
         'hero-pattern': "url('/public/hero.jpeg')",
         churrasco: "url('/public/churrasco.jpg')",
         caviar1: "url('/public/caviar1.jpg')",
-        caviar2: "url('/public/caviar2.jpg')"
-        // 'footer-texture': "url('/img/footer-texture.png')"
+        caviar2: "url('/public/caviar2.jpg')",
+        sumateBg: "url('/public/sumate-bg.jpg')"
       }
     }
   },

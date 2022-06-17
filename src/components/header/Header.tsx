@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import logo from '../../../public/logo.png'
+import logo2 from '../../../public/logo2.png'
 // import { NavItem } from './NavItem'
 
 export const Header = () => {
@@ -31,24 +31,26 @@ export const Header = () => {
 
   const selectMenuItem = (id: number) => {
     setMenuItems(prevMenu => {
-      return prevMenu.map(item => item.id === id ? { ...item, selected: !item.selected } : { ...item, selected: false })
+      return prevMenu.map(
+        item => item.id === id ? { ...item, selected: !item.selected } : { ...item, selected: false }
+      )
     })
   }
 
   return (
-    <header className='bg-headerBg rounded-b-[2.5rem] fixed w-full z-10'>
-      <div className='container py-3 px-14 flex items-center'>
-        <img src={logo} alt="logo" width={75} height={75} />
+    <header className='fixed z-10 w-full bg-headerBg rounded-b-[2.5rem]'>
+      <div className='container flex items-center py-1 px-6 pb-2 mx-auto'>
+        <img src={logo2} alt="logo" width={55} height={55} className='opacity-80' />
 
         <nav className='ml-auto'>
-          <ul className='flex gap-10 text-white text-lg'>
+          <ul className='flex gap-10 text-lg text-white'>
             {
               menuItems.map(item => {
                 return (
                   <li
                     key={item.text}
                     onClick={() => selectMenuItem(item.id)}
-                    className={`cursor-pointer underline underline-offset-4 hover:text-red-400 duration-200 ${item.selected && 'text-red-400'} `}
+                    className={`cursor-pointer underline underline-offset-8 hover:text-red-400 duration-200 ${item.selected && 'text-red-400'} `}
                   >
                     {item.text}
                   </li>

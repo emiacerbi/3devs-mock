@@ -1,19 +1,19 @@
 import React from 'react'
-
-// import hero from '../../../public/hero.jpeg'
+import { Button } from '../utilities/Button'
 
 export const Hero = () => {
   return (
-    <section className='h-screen flex items-center justify-end relative'>
+    <section className='flex min-h-screen'>
       {/* Bg Image */}
-      <div className='bg-hero-pattern bg-[center_bottom] bg-no-repeat absolute bg-cover w-full h-full -z-10 '></div>
-
+      <div className='absolute -z-10 w-full h-full bg-[center_bottom] bg-no-repeat bg-cover bg-hero-pattern '></div>
       {/* Shadow */}
-      <div className='absolute bg-black w-full h-full opacity-30 -z-10 '></div>
+      <div className='absolute -z-10 w-full h-full bg-black opacity-30 '></div>
 
-      <div className='p-5 -translate-x-[15rem] flex flex-col gap-5 tracking-wide'>
-        <h1 className='text-4xl text-white max-w-[22ch]'>LA MEJOR CALIDAD ESTA A SU DISPOSICIÓN</h1>
-        <button className='p-5 text-3xl rounded-lg bg-white'>ELEGI Y PEDINOS</button>
+      <div className='container flex justify-start items-center mx-auto '>
+        <div className='flex flex-col gap-5 p-5 tracking-wide '>
+          <h1 className='max-w-[22ch] text-5xl text-[#F8F6F1] shadow-red-500 drop-shadow-md'>LA MEJOR CALIDAD ESTA A SU DISPOSICIÓN</h1>
+          <Button>ELEGI Y PEDINOS</Button>
+        </div>
       </div>
     </section>
   )

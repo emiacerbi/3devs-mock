@@ -6,7 +6,7 @@ interface Props {
 
 export const NavItem = ({ children }: Props) => {
   return (
-    <li className='cursor-pointer underline underline-offset-4' >
+    <li className='underline underline-offset-4 cursor-pointer' >
       {children}
     </li>
   )
