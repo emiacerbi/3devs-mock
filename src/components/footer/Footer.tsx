@@ -1,4 +1,4 @@
-import React, { FormEventHandler, useState } from 'react'
+import React, { ChangeEvent, useState } from 'react'
 
 import { BsTwitter, BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs'
 import { IoMdSend } from 'react-icons/io'
@@ -6,11 +6,11 @@ import { IoMdSend } from 'react-icons/io'
 export const Footer = () => {
   const [inputValue, setInputValue] = useState('')
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value)
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault()
     alert(`El valor de tu input es: ${inputValue}`)
   }
