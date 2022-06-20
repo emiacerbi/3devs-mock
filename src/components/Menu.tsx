@@ -1,9 +1,16 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 import { Card } from './utilities/Card'
 
 export const Menu = () => {
   return (
-    <main className='bg-gray-300'>
+    <motion.main
+      className='bg-gray-300'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
 
       <div className='container flex flex-col gap-10 py-28 px-10 mx-auto'>
         <div className='flex flex-col items-center mx-auto'>
@@ -36,6 +43,6 @@ export const Menu = () => {
         </div>
       </div>
 
-    </main>
+    </motion.main>
   )
 }
