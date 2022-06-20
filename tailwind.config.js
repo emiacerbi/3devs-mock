@@ -17,7 +17,13 @@ module.exports = {
         churrasco: "url('/churrasco.jpg')",
         caviar1: "url('/caviar1.jpg')",
         caviar2: "url('/caviar2.jpg')",
-        sumateBg: "url('/sumate-bg.jpg')"
+        sumateBg: "url('/sumate-bg.jpg')",
+        churrasco2: "url('/churrasco2.jpg')",
+        merluza: "url('/merluza.jpg')",
+        pasta: "url('/pasta.jpg)",
+        pizza: "url('/pizza.jpg')",
+        sandwich: "url('/sandwich.jpg')",
+        postre1: "url('/postre1.jpg')"
       }
     }
   },

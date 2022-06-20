@@ -1,20 +1,22 @@
 import React, { } from 'react'
+import { Route, Routes } from 'react-router-dom'
 import { Footer } from './components/footer/Footer'
 import { Header } from './components/header/Header'
-import { Hero } from './components/hero/Hero'
-import { MainSection } from './components/MainSection'
-import { SumateSection } from './components/sumate/SumateSection'
+import { Home } from './components/Home'
+import { Menu } from './components/Menu'
 
 function App () {
   return (
     <>
       <Header />
-      <Hero />
-      <MainSection />
-      <SumateSection />
-      <MainSection />
+      <Routes>
+        <Route path='/' element={<Home /> } />
+        <Route path='menu' element={<Menu /> } />
+      </Routes>
+
       <Footer />
     </>
+
   )
 }
 
