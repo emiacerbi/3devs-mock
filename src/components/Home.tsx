@@ -3,6 +3,7 @@ import { Hero } from './hero/Hero'
 import { MainSection } from './MainSection/MainSection'
 import { SumateSection } from './sumate/SumateSection'
 import { motion } from 'framer-motion'
+import { Footer } from './footer/Footer'
 
 export const Home = () => {
   return (
@@ -16,6 +17,7 @@ export const Home = () => {
       <MainSection />
       <SumateSection />
       <MainSection />
+      <Footer />
     </motion.div>
   )
 }

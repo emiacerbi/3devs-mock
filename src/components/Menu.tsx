@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+import { BsFacebook, BsInstagram, BsTwitter, BsWhatsapp } from 'react-icons/bs'
 import { Card } from './utilities/Card'
 
 export const Menu = () => {
@@ -12,36 +13,58 @@ export const Menu = () => {
       transition={{ duration: 0.5 }}
     >
 
-      <div className='container flex flex-col gap-10 py-28 px-10 mx-auto'>
-        <div className='flex flex-col items-center mx-auto'>
+      <div className='container flex flex-col gap-10 py-24 px-10 mx-auto'>
+        <header className='flex flex-col items-center mx-auto'>
           <h2 className='font-secondary text-5xl text-center text-[#D94E4E]'>Categorías</h2>
-          <p className='text-2xl text-center'>Elige una categoría y mira nuestros platos!</p>
-        </div>
+          <p className='text-2xl text-center text-gray-500'>Elige una categoría y mira nuestros platos!</p>
+        </header>
 
-        <div className='flex flex-col gap-10 justify-center items-center'>
+        <section className='flex flex-col gap-10 justify-center items-center'>
+
           <div className='flex gap-10'>
             <div className='flex flex-col gap-5'>
-              <Card bgImage='bg-churrasco' />
+              <Card bgImage='bg-churrasco2' buttonText='Ordenar' />
               <p className='text-2xl text-center text-[#D5A021]'>Carnes vacunas</p>
             </div>
 
             <div className='flex flex-col gap-5'>
-              <Card bgImage='bg-caviar1' />
+              <Card bgImage='bg-merluza' buttonText='Ordenar'/>
               <p className='text-2xl text-center text-[#D5A021]'>Pescados</p>
             </div>
             <div className='flex flex-col gap-5'>
-              <Card bgImage='bg-caviar2' />
+              <Card bgImage='bg-caviar1' buttonText='Ordenar'/>
               <p className='text-2xl text-center text-[#D5A021]'>Pastas</p>
             </div>
           </div>
 
           <div className='flex gap-10'>
-            <Card bgImage='bg-churrasco' />
-            <Card bgImage='bg-caviar1' />
-            <Card bgImage='bg-caviar2' />
+            <div className='flex flex-col gap-5'>
+              <Card bgImage='bg-pizza' buttonText='Ordenar' />
+              <p className='text-2xl text-center text-[#D5A021]'>Pizzas</p>
+            </div>
+            <div className='flex flex-col gap-5'>
+              <Card bgImage='bg-sandwich' buttonText='Ordenar' />
+              <p className='text-2xl text-center text-[#D5A021]'>Sandwiches</p>
+            </div>
+            <div className='flex flex-col gap-5'>
+              <Card bgImage='bg-postre1' buttonText='Ordenar' />
+              <p className='text-2xl text-center text-[#D5A021]'>Postres</p>
+            </div>
           </div>
-        </div>
+
+        </section>
       </div>
+
+      <footer className='py-10 text-white bg-neutral-900'>
+        <div className='container mx-auto'>
+          <ul className='flex gap-10 justify-center'>
+            <li className='p-2 text-3xl hover:opacity-60 duration-200 cursor-pointer'><BsTwitter /></li>
+            <li className='p-2 text-3xl hover:opacity-60 duration-200 cursor-pointer'><BsFacebook /></li>
+            <li className='p-2 text-3xl hover:opacity-60 duration-200 cursor-pointer'><BsWhatsapp /></li>
+            <li className='p-2 text-3xl hover:opacity-60 duration-200 cursor-pointer'><BsInstagram /></li>
+          </ul>
+        </div>
+      </footer>
 
     </motion.main>
   )

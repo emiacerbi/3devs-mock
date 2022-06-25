@@ -12,9 +12,9 @@ export const MainSection = () => {
         </div>
 
         <div className='flex flex-1 gap-8 justify-center items-center lg:flex-row '>
-          <Card bgImage='bg-churrasco' />
-          <Card bgImage='bg-caviar1' />
-          <Card bgImage='bg-caviar2' />
+          <Card buttonText='Ordernar' bgImage='bg-churrasco' />
+          <Card buttonText='Ordernar' bgImage='bg-caviar1' />
+          <Card buttonText='Ordernar' bgImage='bg-caviar2' />
         </div>
       </div>
 

@@ -25,7 +25,7 @@ export const Header = () => {
       id: 4,
       text: 'Contacto',
       selected: false,
-      to: '/'
+      to: '/contacto'
     }
   ])
 
