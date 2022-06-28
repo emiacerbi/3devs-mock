@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from '../utilities/Card'
+import { Card } from './utilities/Card'
 
 export const MainSection = () => {
   return (

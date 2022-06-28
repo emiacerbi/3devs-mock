@@ -1,9 +1,9 @@
 import React from 'react'
-import { Hero } from './hero/Hero'
-import { MainSection } from './MainSection/MainSection'
-import { SumateSection } from './sumate/SumateSection'
 import { motion } from 'framer-motion'
-import { Footer } from './footer/Footer'
+import { Hero } from '../Hero'
+import { MainSection } from '../MainSection'
+import { SumateSection } from '../SumateSection'
+import { Footer } from '../Footer'
 
 export const Home = () => {
   return (

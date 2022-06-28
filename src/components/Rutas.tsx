@@ -1,9 +1,9 @@
 import { AnimatePresence } from 'framer-motion'
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import { Contactanos } from './Contactanos'
-import { Home } from './Home'
-import { Menu } from './Menu'
+import { Contactanos } from './pages/Contactanos'
+import { Home } from './pages/Home'
+import { Menu } from './pages/Menu'
 
 export const Rutas = () => {
   const location = useLocation()

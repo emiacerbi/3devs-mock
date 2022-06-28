@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../utilities/Button'
+import { Button } from './utilities/Button'
 
 export const SumateSection = () => {
   return (

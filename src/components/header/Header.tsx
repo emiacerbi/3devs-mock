@@ -6,7 +6,7 @@ export const Header = () => {
     {
       id: 1,
       text: 'Home',
-      selected: false,
+      selected: true,
       to: '/'
     },
     {
@@ -54,15 +54,14 @@ export const Header = () => {
             {
               menuItems.map(item => {
                 return (
-                  <li
-                    key={item.text}
-                    onClick={() => selectMenuItem(item.id)}
-                    className={`cursor-pointer underline underline-offset-8 hover:text-red-400 duration-200 ${item.selected && 'text-red-400'}`}
-                  >
-                    <Link to={item.to}>
+                  <Link to={item.to} key={item.text}>
+                    <li
+                      onClick={() => selectMenuItem(item.id)}
+                      className={`cursor-pointer underline underline-offset-8 hover:text-red-400 duration-200 ${item.selected && 'text-red-400'}`}
+                    >
                       {item.text}
-                    </Link>
-                  </li>
+                    </li>
+                  </Link>
                 )
               })
             }

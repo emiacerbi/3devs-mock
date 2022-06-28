@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import { BsFacebook, BsInstagram, BsTwitter, BsWhatsapp } from 'react-icons/bs'
-import { Card } from './utilities/Card'
+import { Card } from '../utilities/Card'
 
 export const Menu = () => {
   return (

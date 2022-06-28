@@ -1,10 +1,17 @@
 import React from 'react'
 import { BsFacebook, BsInstagram, BsTwitter, BsWhatsapp } from 'react-icons/bs'
 import { IoMdSend } from 'react-icons/io'
+import { motion } from 'framer-motion'
 
 export const Contactanos = () => {
   return (
-    <section className='flex min-h-screen bg-gray-300'>
+    <motion.section
+      className='flex min-h-screen bg-gray-300'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className='container flex flex-col justify-center items-center mx-auto'>
 
         <div className='flex flex-col gap-3 max-w-prose text-center'>
@@ -43,6 +50,6 @@ export const Contactanos = () => {
 
       </div>
 
-    </section>
+    </motion.section>
   )
 }
