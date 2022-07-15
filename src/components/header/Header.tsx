@@ -29,13 +29,6 @@ export const Header = () => {
     }
   ])
 
-  const goToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
-  }
-
   const selectMenuItem = (id: number) => {
     setMenuItems(prevMenu => {
       return prevMenu.map(
@@ -47,7 +40,9 @@ export const Header = () => {
   return (
     <header className='fixed z-10 w-full bg-headerBg rounded-b-[2.5rem]'>
       <div className='container flex items-center py-1 px-10 pb-2 mx-auto'>
-        <img src={'logo2.png'} alt="logo" width={55} height={55} className='opacity-80 cursor-pointer' onClick={goToTop} />
+        <a href="https://3devs-mock.vercel.app/">
+          <img src={'logo2.png'} alt="logo" width={55} height={55} className='opacity-80 cursor-pointer' />
+        </a>
 
         <nav className='ml-auto'>
           <ul className='flex gap-10 text-lg text-white'>
