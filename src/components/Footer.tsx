@@ -1,10 +1,10 @@
-import React, { ChangeEvent, useState } from "react"
+import React, { ChangeEvent, useState } from 'react'
 
-import { BsTwitter, BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs"
-import { IoMdSend } from "react-icons/io"
+import { BsTwitter, BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs'
+import { IoMdSend } from 'react-icons/io'
 
 export const Footer = () => {
-  const [inputValue, setInputValue] = useState("")
+  const [inputValue, setInputValue] = useState('')
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value)
@@ -17,21 +17,21 @@ export const Footer = () => {
 
   return (
     <footer className="text-[#F8F6F1] bg-[#242325]">
-      <div className="container flex flex-col gap-8 items-center py-10 mx-auto">
+      <div className="container flex flex-col gap-8 items-center py-10 px-5 mx-auto md:px-10">
         <div className="flex flex-col gap-2 items-center">
           <h3 className="text-2xl text-[#D5A021]">¿Qué quieres pedir?</h3>
           <p>Tu mensaje nos llega directamente a nuestro WhatsApp!</p>
         </div>
 
         <form
-          className="flex relative gap-5 items-center w-2/3"
+          className="flex relative gap-5 items-center w-3/4 sm:w-2/3"
           onSubmit={handleSubmit}
         >
           <input
-            className="p-5 w-[100%] text-xl text-black rounded-3xl outline-none"
+            className="p-5 w-full text-xl text-black rounded-3xl outline-none"
             onChange={handleChange}
           />
-          <IoMdSend className="absolute right-[-10%] text-[4rem] text-blue-400 hover:text-blue-300 duration-200 cursor-pointer" />
+          <IoMdSend className="absolute right-[-20%] text-[3rem] text-blue-400 hover:text-blue-300 duration-200 cursor-pointer md:text-[4rem]" />
         </form>
 
         <ul className="flex gap-5">

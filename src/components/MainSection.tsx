@@ -1,5 +1,5 @@
-import React from "react"
-import { CarouselComponent } from "./Carousel"
+import React from 'react'
+import { CarouselComponent } from './Carousel'
 
 export const MainSection = () => {
   return (

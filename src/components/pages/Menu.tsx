@@ -1,7 +1,7 @@
-import { motion } from "framer-motion"
-import React from "react"
-import { BsFacebook, BsInstagram, BsTwitter, BsWhatsapp } from "react-icons/bs"
-import { Card } from "../utilities/Card"
+import { motion } from 'framer-motion'
+import React from 'react'
+import { BsFacebook, BsInstagram, BsTwitter, BsWhatsapp } from 'react-icons/bs'
+import { Card } from '../utilities/Card'
 
 export const Menu = () => {
   return (
@@ -14,7 +14,7 @@ export const Menu = () => {
     >
       <div className="container flex flex-col gap-10 py-24 px-10 mx-auto">
         <header className="flex flex-col items-center mx-auto">
-          <h2 className="font-secondary text-5xl text-center text-[#871E1C] font-bold uppercase">
+          <h2 className="font-secondary text-5xl font-bold text-center text-[#871E1C] uppercase">
             Categorías
           </h2>
           <p className="text-2xl text-center text-gray-500">
@@ -33,26 +33,26 @@ export const Menu = () => {
 
             <div className="flex flex-col gap-5">
               <Card bgImage="bg-merluza" buttonText="Ordenar" />
-              <p className="text-2xl text-center text-[#D5A021]">Pescados</p>
+              <p className="text-3xl text-center text-[#a58332]">Pescados</p>
             </div>
             <div className="flex flex-col gap-5">
               <Card bgImage="bg-caviar1" buttonText="Ordenar" />
-              <p className="text-2xl text-center text-[#D5A021]">Pastas</p>
+              <p className="text-3xl text-center text-[#a58332]">Pastas</p>
             </div>
           </div>
 
           <div className="flex gap-10">
             <div className="flex flex-col gap-5">
               <Card bgImage="bg-pizza" buttonText="Ordenar" />
-              <p className="text-2xl text-center text-[#D5A021]">Pizzas</p>
+              <p className="text-3xl text-center text-[#a58332]">Pizzas</p>
             </div>
             <div className="flex flex-col gap-5">
               <Card bgImage="bg-sandwich" buttonText="Ordenar" />
-              <p className="text-2xl text-center text-[#D5A021]">Sandwiches</p>
+              <p className="text-3xl text-center text-[#a58332]">Sandwiches</p>
             </div>
             <div className="flex flex-col gap-5">
               <Card bgImage="bg-postre1" buttonText="Ordenar" />
-              <p className="text-2xl text-center text-[#D5A021]">Postres</p>
+              <p className="text-3xl text-center text-[#a58332]">Postres</p>
             </div>
           </div>
         </section>
