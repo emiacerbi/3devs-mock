@@ -7,7 +7,7 @@ interface Props {
 export function Card ({ bgImage, buttonText }: Props) {
   return (
     <div
-      className={'w-[400px] h-[600px] bg-gray-100 border-[20px] border-gray-100  '}
+      className={'w-[350px] h-[500px] bg-gray-100 border-[20px] border-gray-100 sm:w-[400px] sm:h-[600px]  '}
     >
       <div
         className={`rounded-tr-[10rem] relative h-full shadow-tincho grid place-content-center  w-full bg-cover ${bgImage} bg-center`}

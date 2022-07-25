@@ -22,38 +22,34 @@ export const Menu = () => {
           </p>
         </header>
 
-        <section className="flex flex-col gap-10 justify-center items-center">
-          <div className="flex gap-10">
-            <div className="flex flex-col gap-5">
-              <Card bgImage="bg-churrasco2" buttonText="Ordenar" />
-              <p className="text-3xl text-center text-[#a58332]">
+        <section className="grid grid-cols-[auto] justify-center justify-items-center lg:grid-cols-[auto_auto] xl:grid-cols-[auto_auto_auto] ">
+          <div className="flex flex-col gap-5">
+            <Card bgImage="bg-churrasco2" buttonText="Ordenar" />
+            <p className="text-3xl text-center text-[#a58332]">
                 Carnes vacunas
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-5">
-              <Card bgImage="bg-merluza" buttonText="Ordenar" />
-              <p className="text-3xl text-center text-[#a58332]">Pescados</p>
-            </div>
-            <div className="flex flex-col gap-5">
-              <Card bgImage="bg-caviar1" buttonText="Ordenar" />
-              <p className="text-3xl text-center text-[#a58332]">Pastas</p>
-            </div>
+            </p>
           </div>
 
-          <div className="flex gap-10">
-            <div className="flex flex-col gap-5">
-              <Card bgImage="bg-pizza" buttonText="Ordenar" />
-              <p className="text-3xl text-center text-[#a58332]">Pizzas</p>
-            </div>
-            <div className="flex flex-col gap-5">
-              <Card bgImage="bg-sandwich" buttonText="Ordenar" />
-              <p className="text-3xl text-center text-[#a58332]">Sandwiches</p>
-            </div>
-            <div className="flex flex-col gap-5">
-              <Card bgImage="bg-postre1" buttonText="Ordenar" />
-              <p className="text-3xl text-center text-[#a58332]">Postres</p>
-            </div>
+          <div className="flex flex-col gap-5">
+            <Card bgImage="bg-merluza" buttonText="Ordenar" />
+            <p className="text-3xl text-center text-[#a58332]">Pescados</p>
+          </div>
+          <div className="flex flex-col gap-5">
+            <Card bgImage="bg-caviar1" buttonText="Ordenar" />
+            <p className="text-3xl text-center text-[#a58332]">Pastas</p>
+          </div>
+
+          <div className="flex flex-col gap-5">
+            <Card bgImage="bg-pizza" buttonText="Ordenar" />
+            <p className="text-3xl text-center text-[#a58332]">Pizzas</p>
+          </div>
+          <div className="flex flex-col gap-5">
+            <Card bgImage="bg-sandwich" buttonText="Ordenar" />
+            <p className="text-3xl text-center text-[#a58332]">Sandwiches</p>
+          </div>
+          <div className="flex flex-col gap-5">
+            <Card bgImage="bg-postre1" buttonText="Ordenar" />
+            <p className="text-3xl text-center text-[#a58332]">Postres</p>
           </div>
         </section>
       </div>
