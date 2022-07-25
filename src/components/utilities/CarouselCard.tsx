@@ -8,7 +8,7 @@ interface Props {
 export const CarouselCard = ({ bgImage, buttonText }: Props) => {
   return (
     <div
-      className={'w-[340px] h-[700px] bg-gray-100 border-[20px] border-gray-100'}
+      className={'w-[340px] h-[600px] bg-gray-100 border-[20px] border-gray-100'}
     >
       <div
         className={`rounded-tr-[10rem] relative h-[90%] shadow-tincho grid place-content-center  w-full bg-cover ${bgImage} bg-center`}
